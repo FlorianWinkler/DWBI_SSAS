@@ -1,0 +1,301 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="625e7e45-65c8-4332-9c63-8ba875e97bc8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Fact Evaluierungen</ID>
+  <Name>Fact Evaluierungen</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1713" scrolltop="-4908" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="14817" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactEvaluierungen" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="7594" height="7990" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000aa1d0000361f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactEvaluierungen" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1713</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4908</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="aca6f956-4946-4e3b-8957-8984a033fd21">
+    <DataSourceViewID>Warehouse DB</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="3fd40cae-769c-40d2-baf3-8ce510bca069">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="3f80a52e-2869-474c-95b1-7df38f2ebe44">
+      <ID>Evaluierung Nr</ID>
+      <Name>Evaluierung Nr</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3a972877-c30a-45ee-a039-b6ae7ab2f345">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6b4344c9-a69f-4e9c-a3f8-e6b4621fd72d">
+            <TableID>dbo_FactEvaluierungen</TableID>
+            <ColumnID>EvaluierungNr</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="b3139ce3-b06b-4529-89ae-2e039612d873">
+          <AttributeID>Organisation Fk</AttributeID>
+          <Name>Organisation Fk</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="092883c7-47ca-46a7-8ad1-618c42a8cbab">
+          <AttributeID>Person Nr FK</AttributeID>
+          <Name>Person Nr FK</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="06349042-1c66-4ad9-b04e-0fbeb5377362">
+          <AttributeID>Datum</AttributeID>
+          <Name>Datum</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="09baddcb-2544-4e2b-9214-67284739700e">
+          <AttributeID>Verantstaltung Nr FK</AttributeID>
+          <Name>Verantstaltung Nr FK</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f260bddb-ac5a-461c-a2be-a2c8de8652b0">
+          <AttributeID>Alter</AttributeID>
+          <Name>Alter</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="094412b0-c6c9-4963-96f7-17b43b7693bc">
+          <AttributeID>Aufbau Und Gliederung Der Lerhveranstaltung</AttributeID>
+          <Name>Aufbau Und Gliederung Der Lerhveranstaltung</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cc69db44-4b60-4a86-913d-6ca935e8f19b">
+          <AttributeID>Lehrveranstaltungsleitung Kompetenz</AttributeID>
+          <Name>Lehrveranstaltungsleitung Kompetenz</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="feda1b0b-b830-460f-ab94-ad4abbdd9b62">
+          <AttributeID>Lehrveranstaltungsleitung Eingehen Auf Fragen</AttributeID>
+          <Name>Lehrveranstaltungsleitung Eingehen Auf Fragen</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a263f5be-1e59-4c4b-971c-4378678a860f">
+          <AttributeID>Besonders Gut</AttributeID>
+          <Name>Besonders Gut</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="befe58e3-9280-4e71-83f5-5c681cb044fc">
+          <AttributeID>Qualitaet Der Unterlagen</AttributeID>
+          <Name>Qualitaet Der Unterlagen</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="02d764cd-8612-4018-94ea-ae986570725d">
+      <ID>Organisation Fk</ID>
+      <Name>Organisation Fk</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0382e358-11b7-46ca-85b1-4a86fa23cb44">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="86eb61cd-6aef-4f1b-90ba-e41fa04be1aa">
+            <TableID>dbo_FactEvaluierungen</TableID>
+            <ColumnID>OrganisationFk</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="54fde81d-7059-4fe1-a5aa-8ed03e629dc6">
+      <ID>Person Nr FK</ID>
+      <Name>Person Nr FK</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a7391a44-fa7d-4787-95b1-d5c8b2cc296e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2eef7228-59f5-45e9-8358-67d5654112d5">
+            <TableID>dbo_FactEvaluierungen</TableID>
+            <ColumnID>PersonNrFK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a1562921-3846-4860-8e5c-20a6542eabbd">
+      <ID>Datum</ID>
+      <Name>Datum</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0e8d6607-117b-44fa-a7b1-8406521da6e7">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ed0d6e9c-68e5-486b-97b2-64f050fce250">
+            <TableID>dbo_FactEvaluierungen</TableID>
+            <ColumnID>Datum</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="13a8af66-5aab-4324-90f2-6013a4e5aeb2">
+      <ID>Verantstaltung Nr FK</ID>
+      <Name>Verantstaltung Nr FK</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f696dc54-8210-4413-a815-98dd0ac25af7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="92ae7815-effb-4ffb-85b2-c36b7b8d03c8">
+            <TableID>dbo_FactEvaluierungen</TableID>
+            <ColumnID>VerantstaltungNrFK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5d95cd88-63b0-4a86-aad8-be48bbedf9e2">
+      <ID>Alter</ID>
+      <Name>Alter</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cb8a2e72-2c2c-45a8-907e-373d25c7044a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="12527920-7527-4675-bd04-89af02908be8">
+            <TableID>dbo_FactEvaluierungen</TableID>
+            <ColumnID>Alter</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="21727bd2-3fd7-441f-8e64-652d196bca33">
+      <ID>Aufbau Und Gliederung Der Lerhveranstaltung</ID>
+      <Name>Aufbau Und Gliederung Der Lerhveranstaltung</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d31aeec6-db8d-44af-bd2a-abc468027eb5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1c5e03d6-8204-4a20-9400-561f9da04594">
+            <TableID>dbo_FactEvaluierungen</TableID>
+            <ColumnID>AufbauUndGliederungDerLerhveranstaltung</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a5f460e6-195e-472a-82df-8c5a0e53af1b">
+      <ID>Lehrveranstaltungsleitung Kompetenz</ID>
+      <Name>Lehrveranstaltungsleitung Kompetenz</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cc43a6a4-531a-4efd-a8c7-8a9dd6791712">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d409e93a-ba30-4dc9-9a45-227578bf1320">
+            <TableID>dbo_FactEvaluierungen</TableID>
+            <ColumnID>LehrveranstaltungsleitungKompetenz</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="240e1cec-cc7d-4712-b5c3-bb448474a3cf">
+      <ID>Lehrveranstaltungsleitung Eingehen Auf Fragen</ID>
+      <Name>Lehrveranstaltungsleitung Eingehen Auf Fragen</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="db9d9054-fccc-4ca5-889c-aee3ab5c44e0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f0c31acc-90c2-4420-94ab-46c646f2206c">
+            <TableID>dbo_FactEvaluierungen</TableID>
+            <ColumnID>LehrveranstaltungsleitungEingehenAufFragen</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8b6242d2-7667-495a-9881-842e4e720007">
+      <ID>Besonders Gut</ID>
+      <Name>Besonders Gut</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0e19f974-0437-4481-a5be-40707befe655">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="969c66f8-3735-410e-8aa8-722937866c66">
+            <TableID>dbo_FactEvaluierungen</TableID>
+            <ColumnID>BesondersGut</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="767b5388-4197-4277-9d58-32dc00a6a65e">
+      <ID>Qualitaet Der Unterlagen</ID>
+      <Name>Qualitaet Der Unterlagen</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="598aedea-4592-4dae-b188-171e8a3d33f2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c523f062-df22-421c-b077-bffad2d064d0">
+            <TableID>dbo_FactEvaluierungen</TableID>
+            <ColumnID>QualitaetDerUnterlagen</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
