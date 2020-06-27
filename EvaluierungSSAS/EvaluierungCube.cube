@@ -231,6 +231,9 @@
         <Attribute dwd:design-time-name="21c8953e-9487-4d06-84da-fbd72ee26db1">
           <AttributeID>Qualitaet Der Unterlagen</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="a665c757-f2f6-4eab-8bc2-5bfe2ddd891f">
+          <AttributeID>Vortragender FK</AttributeID>
+        </Attribute>
       </Attributes>
     </Dimension>
     <Dimension dwd:design-time-name="edb3739f-1049-4bd3-9f8e-d0d165efddb5">
@@ -302,6 +305,9 @@
         </Attribute>
         <Attribute dwd:design-time-name="95e54179-1cee-4465-895e-6b26fe466b3d">
           <AttributeID>Studiengangsname</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d1eb6a90-c73d-4219-be68-7ca0f0b2ad52">
+          <AttributeID>Veranstaltungsart</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>

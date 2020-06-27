@@ -132,6 +132,10 @@
           <AttributeID>Qualitaet Der Unterlagen</AttributeID>
           <Name>Qualitaet Der Unterlagen</Name>
         </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ad5b11b1-8a18-44ef-9ff7-a4860f60342a">
+          <AttributeID>Vortragender FK</AttributeID>
+          <Name>Vortragender FK</Name>
+        </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -290,6 +294,21 @@
           <Source xsi:type="ColumnBinding" dwd:design-time-name="c523f062-df22-421c-b077-bffad2d064d0">
             <TableID>dbo_FactEvaluierungen</TableID>
             <ColumnID>QualitaetDerUnterlagen</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a4258b13-60aa-4cbc-ac02-44176ff5e337">
+      <ID>Vortragender FK</ID>
+      <Name>Vortragender FK</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0bff0f83-cf94-42a1-95cc-a6e79a73b7d0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="adfef21c-5eb8-4b58-a1d5-f3bb9d99e02b">
+            <TableID>dbo_FactEvaluierungen</TableID>
+            <ColumnID>VortragenderFK</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>

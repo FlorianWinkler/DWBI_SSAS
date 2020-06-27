@@ -54,21 +54,21 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>2XJhF5dIJGcu2H7w9cS3ufLbgoE=27.06.2020 14:27:1027.06.2020 14:25:25</TimeStamp>
+        <TimeStamp>f2d17fxmffedIKW5X48KOvRaxfg=27.06.2020 14:57:1427.06.2020 14:25:25</TimeStamp>
         <ID>
           <String>Dim Veranstaltungen</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>t0eXRjkwnmpsbfWIGqwmTRezt8w=27.06.2020 14:27:1027.06.2020 14:25:25</TimeStamp>
+        <TimeStamp>DlaZvD4WMxprKWfk5kP+ruXQG3A=27.06.2020 14:57:1427.06.2020 14:25:25</TimeStamp>
         <ID>
           <String>Fact Evaluierungen</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>qfbVKEVOmtcpoyKzTuXMwz9Z3N4=27.06.2020 14:27:0927.06.2020 14:25:2581QFTgbgOT7ZJSc7fMAkkltv0F8=27.06.2020 14:25:2627.06.2020 14:25:25</TimeStamp>
+        <TimeStamp>DAX0BJwOsojTh9TtGDoz7gVXqJw=27.06.2020 14:57:1427.06.2020 14:25:2581QFTgbgOT7ZJSc7fMAkkltv0F8=27.06.2020 14:25:2627.06.2020 14:25:25</TimeStamp>
         <ID>
           <String>EvaluierungCube</String>
         </ID>
@@ -85,5 +85,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2020-06-27T12:27:16.003333Z</LastDeployed>
+  <LastDeployed>2020-06-27T12:58:25.866667Z</LastDeployed>
 </DeploymentSnapshot>

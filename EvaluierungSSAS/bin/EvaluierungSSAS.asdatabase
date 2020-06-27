@@ -592,6 +592,10 @@
               <AttributeID>Studiengangsname</AttributeID>
               <Name>Studiengangsname</Name>
             </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Veranstaltungsart</AttributeID>
+              <Name>Veranstaltungsart</Name>
+            </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -629,11 +633,27 @@
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
+        <Attribute>
+          <ID>Veranstaltungsart</ID>
+          <Name>Veranstaltungsart</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimVeranstaltungen</TableID>
+                <ColumnID>Veranstaltungsart</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy>
           <ID>Hierarchie</ID>
-          <Name>Hierarchie</Name>
+          <Name>Studienrichtung_gang</Name>
           <Levels>
             <Level>
               <ID>Studienrichtung</ID>
@@ -783,6 +803,10 @@
             <AttributeRelationship>
               <AttributeID>Qualitaet Der Unterlagen</AttributeID>
               <Name>Qualitaet Der Unterlagen</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Vortragender FK</AttributeID>
+              <Name>Vortragender FK</Name>
             </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
@@ -942,6 +966,21 @@
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_FactEvaluierungen</TableID>
                 <ColumnID>QualitaetDerUnterlagen</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Vortragender FK</ID>
+          <Name>Vortragender FK</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_FactEvaluierungen</TableID>
+                <ColumnID>VortragenderFK</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
@@ -1186,6 +1225,9 @@
             <Attribute>
               <AttributeID>Qualitaet Der Unterlagen</AttributeID>
             </Attribute>
+            <Attribute>
+              <AttributeID>Vortragender FK</AttributeID>
+            </Attribute>
           </Attributes>
         </Dimension>
         <Dimension>
@@ -1257,6 +1299,9 @@
             </Attribute>
             <Attribute>
               <AttributeID>Studiengangsname</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Veranstaltungsart</AttributeID>
             </Attribute>
           </Attributes>
           <Hierarchies>

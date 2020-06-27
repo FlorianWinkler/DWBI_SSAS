@@ -102,6 +102,10 @@
           <AttributeID>Studiengangsname</AttributeID>
           <Name>Studiengangsname</Name>
         </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a57fbe60-5574-4e1f-bc8c-7d306e789af8">
+          <AttributeID>Veranstaltungsart</AttributeID>
+          <Name>Veranstaltungsart</Name>
+        </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -139,11 +143,27 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
+    <Attribute dwd:design-time-name="71082083-aa74-44f0-8d99-7148b0f313f3">
+      <ID>Veranstaltungsart</ID>
+      <Name>Veranstaltungsart</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="08e2998b-dc1b-4581-8f9c-8f942b2536e9">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="936e4d84-37cf-4e19-a24b-31640d34e118">
+            <TableID>dbo_DimVeranstaltungen</TableID>
+            <ColumnID>Veranstaltungsart</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
   </Attributes>
   <Hierarchies>
     <Hierarchy dwd:design-time-name="3932f32b-5c4a-46df-831e-0ad7999815cd">
       <ID>Hierarchie</ID>
-      <Name>Hierarchie</Name>
+      <Name>Studienrichtung_gang</Name>
       <Levels>
         <Level dwd:design-time-name="56ffd0c0-37c5-4d7f-8508-020a29ba759c">
           <ID>Studienrichtung</ID>
